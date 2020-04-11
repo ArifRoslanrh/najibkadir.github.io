@@ -332,20 +332,7 @@ the help of MySQL server.</p>
 <script>
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () {
-    scrollFunction()
-  };
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("movetop").style.display = "block";
-    } else {
-      document.getElementById("movetop").style.display = "none";
-    }
-  }
   // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
 </script>
 <!-- //move top -->
 
@@ -356,7 +343,6 @@ the help of MySQL server.</p>
 <script src="assets/js/lightbox-plus-jquery.min.js"></script>
 
 <!-- particles -->
-<script src='assets/js/particles.min.js'></script>
 <script src="assets/js/script.js"></script>
 <!-- //particles -->
 
@@ -388,8 +374,6 @@ the help of MySQL server.</p>
 <script>
   $(function () {
     $('.navbar-toggler').click(function () {
-      $('body').toggleClass('noscroll');
-    })
   });
 </script>
 <!-- disable body scroll which navbar is in active -->
