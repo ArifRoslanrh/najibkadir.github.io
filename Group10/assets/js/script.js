@@ -34,8 +34,8 @@ $(function() {
   /*===================================*
 	02. BACKGROUND ANIMATION JS
 	*===================================*/
-  var $particles_js = $("#banner-bg-effect");
-  if ($particles_js.length > 0) {
+  // var $particles_js = $("#banner-bg-effect");
+  // if ($particles_js.length > 0) {
     particlesJS(
       "banner-bg-effect",
       // Update your personal code.
