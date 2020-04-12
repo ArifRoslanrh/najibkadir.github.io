@@ -2123,7 +2123,8 @@ button.bg-dark:hover {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030
+    z-index: 1030;
+    background-color: #124f8f;
 }
 
 .fixed-bottom {
