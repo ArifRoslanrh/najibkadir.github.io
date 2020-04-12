@@ -71,7 +71,7 @@ Author URL: http://w3layouts.com
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 order-first text-lg-left text-center">
                 <div>
-                    <img src="assets/images/banner-round.webp" alt="" class="rounded-circle img-fluid">
+                    <img src="assets/images/banner-round.webp" loading="lazy" alt="" class="rounded-circle img-fluid">
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@ Author URL: http://w3layouts.com
                 <p class="mt-md-4 mt-3 mb-0"> This website is made as a personal blog to complete our project. The aim of it is to improve its performance for future use. The improvement of this website will give us an insight on what to do to increase the perfomance of other websites.</p>
             </div>
             <div class="col-lg-6">
-                <img srcset="assets/images/about.webp" class="img-fluid img-shadow" alt="about">
+                <img srcset="assets/images/about.webp" loading="lazy" class="img-fluid img-shadow" alt="about">
             </div>
         </div>
     </div>
@@ -139,7 +139,7 @@ Author URL: http://w3layouts.com
                             <div class="customers-left_sur">
                                 <div class="customers_grid">
                                     <div class="custo-img-res">
-                                        <a href="services.html"><img src="assets/images/testi2.webp" alt="img2" class="img-fluid">
+                                        <a href="services.html"><img src="assets/images/testi2.webp" loading="lazy" alt="img2" class="img-fluid">
                                     </div>
                                     <div class="ratings my-4">
                                         <span class="fa fa-star"></span>
@@ -229,7 +229,8 @@ Author URL: http://w3layouts.com
           <p class="mb-4">By subscribing to our mailing list you will always be updated with the latest news from us.
           </p>
           <form class="newsletter-form">
-            <input class="input-rounded" type="text" required="" placeholder="Enter Email Address">
+            <label for="name"></label>
+            <input class="input-rounded" name="email" type="text" required="" placeholder="Enter Email Address">
             <button type="submit" title="Subscribe" class="btn btn-primary btn-style" name="submit" value="Submit">
               Subscribe
             </button>
