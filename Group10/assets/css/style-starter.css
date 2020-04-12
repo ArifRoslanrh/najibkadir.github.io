@@ -3907,7 +3907,6 @@ h1.title {
 }
 
 .stats {
-    background: url(../images/stats_bg.jpg) no-repeat center;
     background-size: cover;
     position: relative
 }
