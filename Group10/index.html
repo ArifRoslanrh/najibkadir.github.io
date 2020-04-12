@@ -15,6 +15,72 @@ Author URL: http://w3layouts.com
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
+  <script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- //move top -->
+
+<!-- javascript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- libhtbox -->
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+<!-- particles -->
+<script src="assets/js/script.js"></script>
+<!-- //particles -->
+
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      margin: 10,
+      nav: true,
+      loop: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        767: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  })
+</script>
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!-- bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -314,73 +380,6 @@ the help of MySQL server.</p>
 <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
   <span class="fa fa-angle-up"></span>
 </button>
-
-<script>
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction()
-  };
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("movetop").style.display = "block";
-    } else {
-      document.getElementById("movetop").style.display = "none";
-    }
-  }
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
-<!-- //move top -->
-
-<!-- javascript -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-
-<!-- libhtbox -->
-<script src="assets/js/lightbox-plus-jquery.min.js"></script>
-
-<!-- particles -->
-<script src="assets/js/script.js"></script>
-<!-- //particles -->
-
-<!-- owl carousel -->
-<script src="assets/js/owl.carousel.min.js"></script>
-<script>
-  $(document).ready(function () {
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      margin: 10,
-      nav: true,
-      loop: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        767: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      }
-    })
-  })
-</script>
-
-<!-- disable body scroll which navbar is in active -->
-<script>
-  $(function () {
-    $('.navbar-toggler').click(function () {
-      $('body').toggleClass('noscroll');
-    })
-  });
-</script>
-<!-- disable body scroll which navbar is in active -->
-
-<!-- bootstrap -->
-<script src="assets/js/bootstrap.min.js"></script>
 
 </body>
 </html>
